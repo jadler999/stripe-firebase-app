@@ -2,15 +2,18 @@
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth } from 'firebase/auth';
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDOgRIYUtMK6RbGC02S8xVEIzp4Gff9rLw",
-  authDomain: "px-stripe-app.firebaseapp.com",
-  projectId: "px-stripe-app",
-  storageBucket: "px-stripe-app.appspot.com",
-  messagingSenderId: "108485792446",
-  appId: "1:108485792446:web:bea0c8af706f00835684ef",
+  apiKey: 'AIzaSyD18gj5ArCzqX0_JLygNcjtCzw_p-ap-pY',
+  authDomain: 'study-buddy-80e7b.firebaseapp.com',
+  projectId: 'study-buddy-80e7b',
+  storageBucket: 'study-buddy-80e7b.appspot.com',
+  messagingSenderId: '430772772425',
+  appId: '1:430772772425:web:1642b3c5cf076bd9726998',
+  measurementId: 'G-MLNG90BY0Z',
 };
 
 // Initialize Firebase
