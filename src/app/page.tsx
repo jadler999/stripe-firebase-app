@@ -17,19 +17,19 @@ export default function Home() {
   const signIn = async () => {
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
-    const jwtToken = await auth.currentUser?.getIdToken()
+    // const jwtToken = await auth.currentUser?.getIdToken()
 
     if (user) {
-      if (jwtToken){
-        const cookieValue = serialize('jwt', jwtToken, {
-          httpOnly: true,
-          secure: process.env.NODE_ENV === 'production', // Set to true in production
-          sameSite: 'strict', // Adjust based on your requirements
-          path: '/', // Adjust based on your application's path structure
-          expires: /* Set an expiration date or duration */,
-        });
-        res.setHeader('Set-Cookie', cookieValue);
-      }
+      // if (jwtToken){
+      //   const cookieValue = serialize('jwt', jwtToken, {
+      //     httpOnly: true,
+      //     secure: process.env.NODE_ENV === 'production', // Set to true in production
+      //     sameSite: 'strict', // Adjust based on your requirements
+      //     path: '/', // Adjust based on your application's path structure
+      //     expires: /* Set an expiration date or duration */,
+      //   });
+      //   // res.setHeader('Set-Cookie', cookieValue);
+      // }
 
       //setcookie
       
